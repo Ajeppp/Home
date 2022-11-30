@@ -12,7 +12,9 @@
         <h1 class="font-bold text-[30px]">Test Your Component Here</h1>
     </div>
     <div class="my-5 flex flex-column justify-center"> 
-        <x-button />
+        <div class="flex justify-center">
+            <x-button />
+        </div>
     </div>
 </body>
 </html>
