@@ -30,3 +30,7 @@ Route::get('/navbar', function () {
     return view('navbarView');
 });
 
+Route::get('/content', function () {
+    return view('contentView');
+});
+
