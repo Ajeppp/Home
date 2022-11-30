@@ -15,9 +15,18 @@ use App\Http\Controllers\workspaceController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/button', function () {
     return view('buttonView');
 });
+
+Route::get('/footer', function () {
+    return view('footerView');
+});
+
+Route::get('/navbar', function () {
+    return view('navbarView');
+});
+
