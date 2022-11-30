@@ -19,7 +19,7 @@
                     <p class="font-medium text-[20px]">Empowering Generations To Win Generations</p>
                 </div>
                 <div class="w-5/12 gap-[50px]">
-                        <p class="mb-3">
+                        <p class="py-3">
                             Selamat datang kepada saudara di dalam keluarga GPdI Hebron. 
                             Menjadi sukacita kami sebagai hamba Tuhan yang dipercayakan 
                             Tuhan melayani pekerjaan Tuhan di tempat ini, dapat melihat 
