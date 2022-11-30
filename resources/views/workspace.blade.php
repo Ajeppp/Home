@@ -14,7 +14,5 @@
     <div class="my-5 flex flex-column justify-center"> 
         <x-button />
     </div>
-    <x-footer />
-
 </body>
 </html>
