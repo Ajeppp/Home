@@ -9,8 +9,6 @@
         @vite('resources/css/app.css')
     </head>
     <body>
-        <h1 class="text-3xl font-bold underline bg-red-700">
-            Hello world!
-        </h1>
+        <h1>Use /workspace </h1>
     </body>
 </html>
