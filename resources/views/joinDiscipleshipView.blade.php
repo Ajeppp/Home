@@ -58,7 +58,7 @@
                     <input type="text" name="line" id="line" class="border-2 border-[#D9D9D9] rounded-3xl px-3 py-2">
                 </div>
                 <div class="flex flex-row gap-3">
-                    <button class="btn btn-wide w-full bg-[#000000]">
+                    <button class="btn btn-wide w-full bg-[#000000] mt-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="10em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M9.4 18L8 16.6l4.6-4.6L8 7.4L9.4 6l6 6Z"/></svg>
                     </button>
                 </div>

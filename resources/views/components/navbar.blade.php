@@ -1,7 +1,7 @@
 
-<nav class="bg-[#1F1D16] text-[#FFFFFF] border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900">
+<nav class="bg-[#1F1D16] text-[#FFFFFF] border-gray-200 px-2 sm:px-4 py-2.5">
     <div class="container flex flex-wrap items-center justify-between mx-auto">
-      <a href="https://flowbite.com/" class="flex items-center">
+      <a href="/" class="flex items-center">
           <img src="https://gpdi-hebron.com/website/images/banner/gpdi-hebron-gading-serpong-41181523042016.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
           <span class="self-center text-xl font-bold whitespace-nowrap tracking-widest">GPDI HEBRON</span>
       </a>
@@ -10,7 +10,7 @@
         <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
       </button>
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
+        <ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-3 md:mt-0 md:text-sm md:font-medium md:border-0">
           <li>
             <a href="/" class="block py-2 pl-3 pr-4 text-[#ffffff] tracking-wide hover:text-gray-500">HOME</a>
           </li>
