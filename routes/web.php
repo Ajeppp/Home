@@ -1,7 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+// use App\Http\Controllers\User;
+use App\Http\Controllers\CgHead;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\workspaceController;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,3 +49,9 @@ Route::get('/aboutus', function () {
 Route::get('/joinDiscipleship', function () {
     return view('joinDiscipleshipView');
 });
+
+Route::resource('discipleship', UserController::class);
+
+Route::resource('cghead', CgHead::class);
+
+Route::post('/discipleship', [UserController::class, 'store']);
