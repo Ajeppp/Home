@@ -59,6 +59,7 @@
                 <img src="https://cdn.discordapp.com/attachments/1044637020380745830/1047701604306006126/image_5.png" class="bg-no-repeat object-cover mt-8">
         </div>
         {{-- Footer --}}
+        <x-footer />
     </div>
 </body>
 </html>
