@@ -1,4 +1,4 @@
-<div class="flex flex-col md:flex-row bg-[#F0F0F0] px-10 pt-16 pb-10 md:justify-between">
+<div class="flex flex-col md:flex-row bg-[#F0F0F0] text-[#222222] px-10 pt-16 pb-10 md:justify-between">
     <div class="flex flex-col gap-6">
         <div class="flex flex-row -mx-8 gap-5">
             <img src="https://gpdi-hebron.com/website/images/banner/gpdi-hebron-gading-serpong-41181523042016.png" alt="" width="100px">
