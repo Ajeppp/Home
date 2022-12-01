@@ -50,7 +50,7 @@
         <div class="flex flex-row justify-center items-center text-[#222222] gap-20 h-[500px] -mt-32 bg-[url('https://www.planetshakers.com/wp-content/uploads/2022/02/planetshakers-urbanlife-2022-bg.jpg')]">
                 <div class="flex flex-col items-center">
                     <p class="text-[22px]">Lastest from GPDI Hebron</p>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col mb-14">
                         <h1 class="text-[54px] text-center font-bold">KasihMu</h1>
                         <h1 class="text-[54px] text-center font-bold -mt-5">Sempurna</h1>
                     </div>

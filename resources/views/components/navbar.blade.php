@@ -6,16 +6,16 @@
                         <a href="#" class="text-white text-sm font-bold tracking-[8px]" aria-current="page">GPDI HEBRON</a>
                     </div>
                     <div id="right-navbar" class="flex flex-row gap-8">
-                            <a href="#" class="text-[#FFFFFF] hover:bg-gray-700 hover:text-white text-sm font-medium tracking-[3px]">HOME</a>
+                            <a href="#" class="text-[#FFFFFF] hover:text-indigo-400 text-sm font-medium tracking-[3px]">HOME</a>
 
-                            <a href="#" class="text-[#FFFFFF] hover:bg-gray-700 hover:text-white text-sm font-medium tracking-[3px]">ABOUT US</a>
+                            <a href="#" class="text-[#FFFFFF] hover:text-indigo-400 text-sm font-medium tracking-[3px]">ABOUT US</a>
 
-                            <a href="#" class="text-[#FFFFFF] hover:bg-gray-700 hover:text-white text-sm font-medium tracking-[3px]">DISCIPLESHIP</a>
+                            <a href="#" class="text-[#FFFFFF] hover:text-indigo-400 text-sm font-medium tracking-[3px]">DISCIPLESHIP</a>
 
-                            <a href="#" class="text-[#FFFFFF] hover:bg-gray-700 hover:text-white text-sm font-medium tracking-[3px]">MEDIA</a>
+                            <a href="#" class="text-[#FFFFFF] hover:text-indigo-400 text-sm font-medium tracking-[3px]">MEDIA</a>
 
-                            <a href="#" class="text-[#FFFFFF] hover:bg-gray-700 hover:text-white text-sm font-medium tracking-[3px]">CONTACT US</a>
+                            <a href="#" class="text-[#FFFFFF] hover:text-indigo-400 text-sm font-medium tracking-[3px]">CONTACT US</a>
 
-                            <a href="#" class="text-[#FFFFFF] hover:bg-gray-700 hover:text-white text-sm font-medium tracking-[3px]">LOCATION</a>
+                            <a href="#" class="text-[#FFFFFF] hover:text-indigo-400 text-sm font-medium tracking-[3px]">LOCATION</a>
                     </div>
 </div>
