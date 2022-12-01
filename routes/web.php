@@ -34,3 +34,6 @@ Route::get('/content', function () {
     return view('contentView');
 });
 
+Route::get('/discipleship', function () {
+    return view('discipleshipView');
+});
