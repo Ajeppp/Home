@@ -15,7 +15,7 @@ use App\Http\Controllers\workspaceController;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('homepage');
 });
 
 Route::get('/button', function () {
