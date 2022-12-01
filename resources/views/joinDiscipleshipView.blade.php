@@ -8,10 +8,11 @@
     @vite('resources/css/app.css')
 </head>
 <body>
+    <div class="md:container bg-[#ffffff] md:mx-auto">
     <x-navbar />
     <form action=""  method="post">
         @csrf
-        <div class="text-[#222222] flex flex-row h-screen px-52 mt-36 justify-between gap-20">
+        <div class="text-[#222222] flex flex-row h-screen px-52 my-24 justify-between gap-20">
             <div class="flex flex-col justify-start w-2/5">
                 <img src="https://media.discordapp.net/attachments/943536943948513291/1047498370270363648/gpdi-hebron-gading-serpong-41181523042016.png" alt="logo" class="w-[150px] bg-no-repeat object-cover -ml-12">
                 <h1 class="font-bold text-[35px]">Pendaftaran</h1>
@@ -61,6 +62,10 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="10em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M9.4 18L8 16.6l4.6-4.6L8 7.4L9.4 6l6 6Z"/></svg>
                     </button>
                 </div>
+            </div>
+        </div>
     </form>
+    <x-footer />
+    <div />
 </body>
 </html>
