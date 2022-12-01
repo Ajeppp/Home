@@ -41,3 +41,7 @@ Route::get('/discipleship', function () {
 Route::get('/aboutus', function () {
     return view('aboutusView');
 });
+
+Route::get('/joinDiscipleship', function () {
+    return view('joinDiscipleshipView');
+});

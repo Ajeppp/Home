@@ -23,7 +23,9 @@
                         di tempat ini, dapat melihat saudara beribadah kepada Tuhan dan bertumbuh dalam kuasa Firman 
                         dan Roh Kudus.
                     </p>
-                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-[170px] h-[60px] bg-[#D9D9D9] text-[#000000] border-0 rounded-3xl">Join HOME</button>
+                    <a href="/joinDiscipleship">
+                        <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-[170px] h-[60px] bg-[#D9D9D9] text-[#000000] border-0 rounded-3xl">Join HOME</button>
+                    </a>
         </div>
     </div>
 </body>
