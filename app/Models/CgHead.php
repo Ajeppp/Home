@@ -18,5 +18,8 @@ class CgHead extends Model
         'place',
     ];
 
-
+    public function user()
+    {
+        return $this->hasMany(User::class);
+    }
 }

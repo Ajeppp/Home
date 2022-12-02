@@ -26,7 +26,7 @@ return new class extends Migration
             $table->string('address');
             $table->string('line');
             $table->date('birthdate');
-            $table->string('cg_id')->nullable();
+            $table->integer('cg_id')->unsigned();
             $table->rememberToken();
             $table->timestamps();
         });
