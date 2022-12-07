@@ -12,7 +12,7 @@
         {{-- navbar --}}
         <x-navbar />
         {{-- content --}}
-        <div class="text-[#222222] flex flex-row h-screen px-52 mt-36 justify-between gap-20 h-max pb-32">
+        <div class="text-[#222222] flex flex-row h-max px-52 mt-32 justify-between gap-20 pb-32">
             <div class="flex flex-col justify-start w-2/5">
                 <img src="https://media.discordapp.net/attachments/943536943948513291/1047498370270363648/gpdi-hebron-gading-serpong-41181523042016.png" alt="logo" class="w-[150px] bg-no-repeat object-cover -ml-12">
                 <h1 class="font-bold text-[35px]">HOME</h1>

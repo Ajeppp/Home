@@ -18,40 +18,49 @@ use App\Models\User;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
+// Function untuk menampilkan halaman
+// Route::get('/', [UserController::class, 'main'])->middleware('auth');
+
+Route::get('/', function() {
+    return view('loginView');
 });
 
-Route::get('/button', function () {
-    return view('buttonView');
-});
+Route::post('/', [UserController::class, 'loginAuth']);
 
-Route::get('/footer', function () {
-    return view('footerView');
-});
-
-Route::get('/navbar', function () {
-    return view('navbarView');
-});
-
-Route::get('/content', function () {
-    return view('contentView');
-});
-
-Route::get('/discipleship', function () {
-    return view('discipleshipView');
-});
+Route::get('home', [UserController::class, 'main'])->middleware('auth');
 
 Route::get('/aboutus', function () {
     return view('aboutusView');
 });
 
-Route::get('/joinDiscipleship', function () {
-    return view('joinDiscipleshipView');
-});
+Route::get('/discipleship', [UserController::class, 'index']);
+// Route::get('/joinDiscipleship', [UserController::class, 'joinDiscipleship']);
+// Route::get('/cg', [UserController::class, 'viewCg']);
+// Route::get('/', [UserController::class, 'login']);
 
-Route::resource('discipleship', UserController::class);
+// Function untuk handle post request
+// Route::post('/', [UserController::class, 'store']);
+// Route::post('/', [UserController::class, 'loginAuth']);
 
-Route::resource('cghead', CgHead::class);
 
-Route::post('/discipleship', [UserController::class, 'store']);
+// Route::get('/button', function () {
+    //     return view('buttonView');
+// });
+
+// Route::get('/footer', function () {
+//     return view('footerView');
+// });
+
+// Route::get('/navbar', function () {
+//     return view('navbarView');
+// });
+
+// Route::get('/content', function () {
+//     return view('contentView');
+// });
+
+
+
+
+// Route::resource('discipleship', UserController::class);
+// Route::resource('cghead', CgHead::class);

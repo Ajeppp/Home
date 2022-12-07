@@ -15,22 +15,23 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            // $table->string('name');
             $table->string("role")
                 ->comment('1:admin, 2:user')->default(2);
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('gender')->default('none');
-            $table->string('phone');
-            $table->string('address');
-            $table->string('line');
-            $table->date('birthdate');
-            $table->integer('cg_id')->unsigned();
+            // $table->string('phone');
+            // $table->string('address');
+            // $table->string('line');
+            // $table->date('birthdate');
+            $table->integer('cg_id')->unsigned()->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.

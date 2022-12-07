@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
     <title>GPdI Hebron</title>
 
     @vite('resources/css/app.css')
@@ -64,6 +65,29 @@
                 </div>
                 <img src="https://cdn.discordapp.com/attachments/1044637020380745830/1047701604306006126/image_5.png" class="hidden md:bg-no-repeat object-cover mt-8 md:block">
         </div>
+
+        {{-- Contact Us --}}
+        <div class="flex flex-row justify-center items-center text-[#222222] gap-20 h-[500px] my-5 bg-[#FFFFFF]">
+                <div class="flex flex-col items-center">
+                    <p class="text-[22px]">Get In Touch With Us</p>
+                    <div class="flex flex-col mb-14">
+                        <P class="text-[54px] text-center font-bold">GPdI</P>
+                        <P class="text-[54px] text-center font-bold -mt-5">Hebron</P>
+                    </div>
+                    <button>
+                        <div class="flex bg-[#434242] hover:bg-[#68B984] hover:text-[#000000] text-[#FFFFFF] w-[180px] h-[50px] items-center justify-center">
+                            <a href="https://wa.me/+6281387243736" class="font-medium text-[18px]">
+                                <span class="flex flex-row items-center gap-2">
+                                    <iconify-icon icon="logos:whatsapp-icon"></iconify-icon>
+                                    <span class="ml-2">Contact Us</span>
+                                </span>
+                            </a>
+                        </div>
+                    </button>
+                </div>
+                <img src="https://media.discordapp.net/attachments/943536943948513291/1047498370270363648/gpdi-hebron-gading-serpong-41181523042016.png" alt="logo" class="hidden md:block w-[200px] bg-no-repeat object-cover">
+        </div>
+
         {{-- Footer --}}
         <x-footer />
     </div>

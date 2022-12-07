@@ -10,13 +10,13 @@
 <body>
     <div class="md:container bg-[#ffffff] md:mx-auto">
         <x-navbar />
-        <div class="text-[#222222] flex flex-row px-52 my-24 justify-between gap-20">
+        <div class="text-[#222222] flex flex-row px-52 my-12 justify-between gap-20">
             <div class="flex flex-col justify-start w-2/5">
                 <img src="https://media.discordapp.net/attachments/943536943948513291/1047498370270363648/gpdi-hebron-gading-serpong-41181523042016.png" alt="logo" class="w-[150px] bg-no-repeat object-cover -ml-12">
                 <h1 class="font-bold text-[35px]">Pendaftaran</h1>
                 <h1 class="font-bold text-[35px]">HOME</h1>
             </div>
-            <form action="/discipleship"  method="POST" class="flex flex-col w-3/5 gap-3">
+            <form action="/"  method="POST" class="flex flex-col w-3/5 gap-3">
                 @csrf
             
                     {{-- <h1 class="font-bold text-[22px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>

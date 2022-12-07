@@ -24,9 +24,6 @@
             <a href="#" class="block py-2 pl-3 pr-4 text-[#ffffff] tracking-wide hover:text-gray-500">MEDIA</a>
           </li>
           <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-[#ffffff] tracking-wide hover:text-gray-500">CONTACT US</a>
-          </li>
-          <li>
             <a href="#" class="block py-2 pl-3 pr-4 text-[#ffffff] tracking-wide hover:text-gray-500">LOCATION</a>
           </li>
         </ul>
