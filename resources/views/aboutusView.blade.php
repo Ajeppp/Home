@@ -8,7 +8,7 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <div class="md:container md:mx-auto">
+    <div class="md:mx-auto">
         {{-- navbar --}}
         <x-navbar />
 

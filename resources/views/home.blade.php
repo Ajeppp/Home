@@ -8,7 +8,7 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <div class="md:container md:mx-auto">
+    <div class="bg-[#FFFFFF] text-[#222222] md:mx-auto">
         {{-- navbar --}}
         <x-navbar />
 
@@ -21,16 +21,14 @@
         <div class="grid justify-items-center md:flex mx-10 mt-20 justify-center ">
             <div class="grid justify-items-center md:w-1/4">
                 <div class="flex justify-center">
+                    </div>
+                <div class="flex flex-col md:w-8/12 h-max text-center md:text-left items-center md:items-start md:w-1/2">
                     <img src="https://media.discordapp.net/attachments/943536943948513291/1047498370270363648/gpdi-hebron-gading-serpong-41181523042016.png" alt="logo" class="w-[150px] bg-no-repeat object-cover">
-                </div>
-                <div class="grid w-1/2 justify-center md:w-1/2">
                     <h1 class="font-bold text-[30px] ">Welcome to GPdI Hebron</h1>
-                </div>
-                <div class="w-3/4 md:w-40">
                     <p class="font-medium text-[20px]">Empowering Generations To Win Generations</p>
                 </div>
             </div>
-            <div class="mt-5 w-full text-justify md:grid  md:mx-10 ">
+            <div class="flex flex-col pt-7 md:w-7/12 text-justify">
                 <p class="md:mt-20">
                     Selamat datang kepada saudara di dalam keluarga GPdI Hebron. 
                     Menjadi sukacita kami sebagai hamba Tuhan yang dipercayakan 
