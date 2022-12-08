@@ -17,18 +17,17 @@
         <div>
             <div class="flex flex-col gap-4">
                 <div class="flex flex-col gap-2">
-                    <p class="font-bold">Find Us On:</p>
+                    <p class="font-bold">Find Us Here!</p>
                     <div class="flex flex-row gap-7 mr-7">
-                        <a href=""><iconify-icon icon="carbon:logo-youtube" width="40"></iconify-icon></a>
-                        <a href=""><iconify-icon icon="bi:facebook" width="35"></iconify-icon></a>
-                        <a href=""><iconify-icon icon="mdi:instagram" width="40"></iconify-icon></a>
+                        <a href="https://www.youtube.com/@gpdihebrongadingserpong5298"><iconify-icon icon="carbon:logo-youtube" width="40"></iconify-icon></a>
+                        <a href="https://www.instagram.com/spot_gen/"><iconify-icon icon="mdi:instagram" width="40"></iconify-icon></a>
                     </div>
                 </div>
                 <div class="flex flex-col md:flex-row gap-7 md:gap-15 mr-7">                
                     <div>
                         <p class="font-bold">Hebron</p>
-                        <p class="font-medium text-[#0A0A0A]">About</p>
-                        <p class="font-medium text-[#0A0A0A]">Contact</p>
+                        <a href="/aboutus"><p class="font-medium text-[#0A0A0A]">About</p></a>
+                        <a href="https://wa.me/+6281314467562"><p class="font-medium text-[#0A0A0A]">Contact</p></a>
                         <p class="font-medium text-[#0A0A0A]">FAQ</p>
                     </div>
                     <div>
@@ -37,12 +36,8 @@
                     </div>
                     <div>
                         <p class="font-bold">Get Involved</p>
-                        <p class="font-medium text-[#0A0A0A]">Christian Group</p>
+                        <a href="/discipleship"><p class="font-medium text-[#0A0A0A]">Christian Group</p></a>
                     </div>
-                    <!-- <div>
-                        <p class="font-bold">Partners</p>
-                        <p class="font-medium text-[#0A0A0A]">Job Vacancy</p>
-                    </div> -->
                 </div>
             </div>
         </div>

@@ -20,12 +20,12 @@
                 <h1 class="font-bold text-[35px]">GPdI Hebron</h1>
             </div>
             <div class="flex flex-col w-3/5 gap-3">
-                <h1 class="font-bold text-[22px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-                <p class="text-[20px]">
-                    Selamat datang kepada saudara di dalam keluarga GPdI Hebron. 
-                    Menjadi sukacita kami sebagai hamba Tuhan yang dipercayakan Tuhan melayani pekerjaan Tuhan 
-                    di tempat ini, dapat melihat saudara beribadah kepada Tuhan dan bertumbuh dalam kuasa Firman 
-                    dan Roh Kudus.
+                <h1 class="font-bold text-[22px]">Apa itu "HOME"?</h1>
+                <p class="text-[20px] text-justify">
+                    Setiap jemaat Hebron adalah jiwa yang dipercayakan oleh Tuhan kepada kita, dan Setiap
+                    jiwa ini haruslah tertanam dan bertumbuh didalam sebuah wadah (Komunitas). HOME merupakan 
+                    sebuah wadah dimana Sahabat Jiwa dapat melakukan pembapaan dan pemuridan untuk mengajarkan
+                    mereka agar melakukan segala sesuatu yang telah diperintahkan Kristus kepada kita.
                 </p>
                 <div class="flex bg-[#f0f0f0] hover:bg-[#434242] hover:text-[#FFFFFF] text-[#000000] w-[180px] h-[50px] items-center justify-center">
                     <a href="/login" class="font-medium text-[18px]">
@@ -37,8 +37,15 @@
         @endguest
 
         @auth
+        <h1>Halo, ini dah login!</h1>
+        @if(auth()->user()->cg_id != NULL)
+
+            jadwal pertemuan
+        @else
+            pilih ketua
+        @endif
         {{-- content --}}
-        <h1>Halo, ini test doang!</h1>
+        {{-- content --}}
         @endauth
     </div>
     <x-footer />
