@@ -1,3 +1,4 @@
+<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 <div class="flex flex-col md:flex-row bg-[#F0F0F0] text-[#222222] px-10 pt-16 pb-10 md:justify-between">
     <div class="flex flex-col gap-6">
         <div class="flex flex-row -mx-8 gap-5">
@@ -11,30 +12,37 @@
             Blok L39 & L50 <br>
             Gading Serpong
         </p>
-        <p class="font-bold text-sm -mt-10 md:mt-10 text-[#858585] invisible md:visible">Copyrights © 2022 GpDI Hebron, All Rights Reserved.</p> 
+        <p class="font-bold text-sm -mt-10 md:mt-10 text-[#858585] invisible md:visible">Copyrights © 2022 GPdI Hebron, All Rights Reserved.</p> 
         </div>
         <div>
-            <div class="flex flex-col md:flex-row gap-7 md:gap-20 mr-7">
-                <div>
-                    <p class="font-bold">Service</p>
-                    <p class="font-medium text-[#0A0A0A]">Online Service</p>
-                    <p class="font-medium text-[#0A0A0A]">Onsite Service</p>
+            <div class="flex flex-col gap-4">
+                <div class="flex flex-col gap-2">
+                    <p class="font-bold">Find Us On:</p>
+                    <div class="flex flex-row gap-7 mr-7">
+                        <a href=""><iconify-icon icon="carbon:logo-youtube" width="40"></iconify-icon></a>
+                        <a href=""><iconify-icon icon="bi:facebook" width="35"></iconify-icon></a>
+                        <a href=""><iconify-icon icon="mdi:instagram" width="40"></iconify-icon></a>
+                    </div>
                 </div>
-                <div>
-                    <p class="font-bold">Get Involved</p>
-                    <p class="font-medium text-[#0A0A0A]">Christian Group</p>
-                </div>
-                <div>
-                    <p class="font-bold">Hebron</p>
-                    <p class="font-medium text-[#0A0A0A]">About</p>
-                    <p class="font-medium text-[#0A0A0A]">Contact</p>
-                    <p class="font-medium text-[#0A0A0A]">Carrers</p>
-                    <p class="font-medium text-[#0A0A0A]">FAQ</p>
-                    <p class="font-medium text-[#0A0A0A]">Resource</p>
-                </div>
-                <div>
-                    <p class="font-bold">Partners</p>
-                    <p class="font-medium text-[#0A0A0A]">Job Vacancy</p>
+                <div class="flex flex-col md:flex-row gap-7 md:gap-15 mr-7">                
+                    <div>
+                        <p class="font-bold">Hebron</p>
+                        <p class="font-medium text-[#0A0A0A]">About</p>
+                        <p class="font-medium text-[#0A0A0A]">Contact</p>
+                        <p class="font-medium text-[#0A0A0A]">FAQ</p>
+                    </div>
+                    <div>
+                        <p class="font-bold">Service</p>
+                        <p class="font-medium text-[#0A0A0A]">On-Site Service</p>
+                    </div>
+                    <div>
+                        <p class="font-bold">Get Involved</p>
+                        <p class="font-medium text-[#0A0A0A]">Christian Group</p>
+                    </div>
+                    <!-- <div>
+                        <p class="font-bold">Partners</p>
+                        <p class="font-medium text-[#0A0A0A]">Job Vacancy</p>
+                    </div> -->
                 </div>
             </div>
         </div>
