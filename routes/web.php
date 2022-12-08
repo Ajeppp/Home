@@ -22,27 +22,6 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 |
 */
 
-// Route::get("/", [UserController::class, 'main']);
-// Function untuk menampilkan halaman
-// Route::get('/', [UserController::class, 'main'])->middleware('auth');
-
-// Route::get('/', function() {
-//     return view('loginView');
-// });
-
-// Route::post('/', [UserController::class, 'loginAuth']);
-
-// Route::get('home', [UserController::class, 'main'])->middleware('auth');
-
-Route::get('/aboutus', function () {
-    return view('aboutusView');
-});
-
-Route::get('/discipleship', [UserController::class, 'index']);
-// Route::get('/joinDiscipleship', [UserController::class, 'joinDiscipleship']);
-// Route::get('/cg', [UserController::class, 'viewCg']);
-
-
 // Login and Register Route Controller
 Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/register', [RegisterController::class, 'store']);
@@ -59,8 +38,6 @@ Route::get('/media', [DashboardController::class, 'media']);
 Route::get('/location', [DashboardController::class, 'location']);
 
 // ini yang bs akses cm yg bs login ->middleware('auth')
-
-
 
 
 // ini component buatan jefer, kalo mo cek nyalain aja lagi route nya -- geri
