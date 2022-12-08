@@ -9,16 +9,34 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <form action="/"  method="POST" class="flex flex-col w-3/5 gap-3">
+    <h1>Login</h1>
+    @if(session()->has('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
+
+    @if(session()->has('loginError'))
+        <div class="alert alert-danger">
+            {{ session('loginError') }}
+        </div>
+    @endif
+
+    <form action="/login"  method="POST" class="flex flex-col w-3/5 gap-3">
         @csrf
   
             <div class="flex flex-col gap-3">
                 <label for="email" class="text-[#000000]">Email</label>
-                <input type="email" name="email" id="email" class="border-2 border-[#D9D9D9] rounded-3xl px-3 py-2">
+                <input type="email" name="email" id="email" class="border-2 border-[#D9D9D9] rounded-3xl px-3 py-2" autofocus required value="{{ old('email') }}">
+                {{-- @error('email')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror --}}
             </div>
             <div class="flex flex-col gap-3">
                 <label for="password" class="text-[#000000]">Password</label>
-                <input type="password" name="password" id="password" class="border-2 border-[#D9D9D9] rounded-3xl px-3 py-2">
+                <input type="password" name="password" id="password" class="border-2 border-[#D9D9D9] rounded-3xl px-3 py-2 @error('email') is-invalid @enderror" required>
             </div>
             <div class="flex flex-row gap-3">
                 <button class="btn btn-wide w-full bg-[#000000] mt-2">
@@ -26,6 +44,7 @@
                 </button>
             </div>
     </form>
+    <a href="/register">Register Now!</a>
 
 </body>
 </html>
