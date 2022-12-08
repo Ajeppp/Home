@@ -41,13 +41,29 @@ Route::get('/aboutus', function () {
 Route::get('/discipleship', [UserController::class, 'index']);
 // Route::get('/joinDiscipleship', [UserController::class, 'joinDiscipleship']);
 // Route::get('/cg', [UserController::class, 'viewCg']);
-// Route::get('/', [UserController::class, 'login']);
-
-// Function untuk handle post request
-// Route::post('/', [UserController::class, 'store']);
-// Route::post('/', [UserController::class, 'loginAuth']);
 
 
+// Login and Register Route Controller
+Route::get('/register', [RegisterController::class, 'index']);
+Route::post('/register', [RegisterController::class, 'store']);
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware("guest");
+Route::post('/login', [LoginController::class, 'authenticate']);
+Route::get('/logout', [LoginController::class, 'logout']);
+
+// untuk show semua url yg bs diakses
+Route::get('/', [DashboardController::class, 'index']);
+Route::get('/aboutus', [DashboardController::class, 'aboutus']);
+Route::get('/cg', [DashboardController::class, 'cg']);
+Route::get('/discipleship', [DashboardController::class, 'discipleship']);
+Route::get('/media', [DashboardController::class, 'media']);
+Route::get('/location', [DashboardController::class, 'location']);
+
+// ini yang bs akses cm yg bs login ->middleware('auth')
+
+
+
+
+// ini component buatan jefer, kalo mo cek nyalain aja lagi route nya -- geri
 // Route::get('/button', function () {
     //     return view('buttonView');
 // });
@@ -63,17 +79,3 @@ Route::get('/discipleship', [UserController::class, 'index']);
 // Route::get('/content', function () {
 //     return view('contentView');
 // });
-
-
-
-
-// Route::resource('discipleship', UserController::class);
-// Route::resource('cghead', CgHead::class);
-
-// Login Controller
-
-Route::get('/login', [LoginController::class, 'index']);
-Route::post('/login', [LoginController::class, 'authenticate']);
-Route::get('/register', [RegisterController::class, 'index']);
-Route::post('/register', [RegisterController::class, 'store']);
-Route::get('/dashboard', [DashboardController::class, 'index']);

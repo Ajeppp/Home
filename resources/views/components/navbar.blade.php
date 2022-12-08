@@ -21,11 +21,20 @@
             <a href="/discipleship" class="block py-2 pl-3 pr-4 text-[#ffffff] tracking-wide hover:text-gray-500">DISCIPLESHIP</a>
           </li>
           <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-[#ffffff] tracking-wide hover:text-gray-500">MEDIA</a>
+            <a href="/media" class="block py-2 pl-3 pr-4 text-[#ffffff] tracking-wide hover:text-gray-500">MEDIA</a>
           </li>
           <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-[#ffffff] tracking-wide hover:text-gray-500">LOCATION</a>
+            <a href="/location" class="block py-2 pl-3 pr-4 text-[#ffffff] tracking-wide hover:text-gray-500">LOCATION</a>
           </li>
+          <li>
+            @auth
+            <a href="/logout" class="block py-2 pl-3 pr-4 text-[#ffffff] tracking-wide hover:text-gray-500">LOGOUT </a>
+            @else
+            <a href="/login" class="block py-2 pl-3 pr-4 text-[#ffffff] tracking-wide hover:text-gray-500">LOGIN </a> 
+            @endauth
+          </li>
+
+          {{-- <p>Welcome back, {{ auth()->user()->name }}</p> --}}
         </ul>
       </div>
     </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Discipleship</title>
+    <title>GPdI Hebron - {{ $title }}</title>
 
     @vite('resources/css/app.css')
 </head>
@@ -11,6 +11,7 @@
 <div class="bg-[#ffffff] md:mx-auto">
         {{-- navbar --}}
         <x-navbar />
+        @guest
         {{-- content --}}
         <div class="text-[#222222] flex flex-row h-max px-52 mt-32 justify-between gap-20 pb-32">
             <div class="flex flex-col justify-start w-2/5">
@@ -27,12 +28,18 @@
                     dan Roh Kudus.
                 </p>
                 <div class="flex bg-[#f0f0f0] hover:bg-[#434242] hover:text-[#FFFFFF] text-[#000000] w-[180px] h-[50px] items-center justify-center">
-                    <a href="/joinDiscipleship" class="font-medium text-[18px]">
+                    <a href="/login" class="font-medium text-[18px]">
                         Join HOME
                     </a>
                 </div>
             </div>
         </div>
+        @endguest
+
+        @auth
+        {{-- content --}}
+        <h1>Halo, ini test doang!</h1>
+        @endauth
     </div>
     <x-footer />
 </body>
