@@ -29,6 +29,7 @@ return new class extends Migration
             $table->integer('cg_id')->unsigned()->nullable();
             $table->rememberToken();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
