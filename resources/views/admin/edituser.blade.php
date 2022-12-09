@@ -3,27 +3,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GPdI Hebron - {{ $title }}</title>
+    <title>Registration</title>
 
     @vite('resources/css/app.css')
 </head>
 <body>
-    @if(session()->has('success'))
-        <div class="alert alert-success">
-            {{ session('success') }}
-        </div>
-    @endif
-
-    @if(session()->has('loginError'))
-        <div class="alert alert-danger">
-            {{ session('loginError') }}
-        </div>
-    @endif
     <div class="md:container bg-[#ffffff] md:mx-auto">
-        <a href="/admin">back</a>
         <div class="text-[#222222] flex flex-row px-52 my-12 justify-between gap-20">
-            <form action="/cg"  method="POST" class="flex flex-col w-3/5 gap-3">
+            <form action="/admin/user/{{ $user->id }}"  method="POST" class="flex flex-col w-3/5 gap-3">
                 @csrf
+                @method('PUT')
             
                     {{-- <h1 class="font-bold text-[22px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
                     <p class="text-[20px]">
@@ -34,27 +23,23 @@
                     </p> --}}
                     <div class="flex flex-col gap-3">
                         <label for="name" class="text-[#000000]">Name</label>
-                        <input type="text" name="name" id="name" class="border-2 border-[#D9D9D9] rounded-3xl px-3 py-2 @error('name') is-invalid @enderror" required value="{{ old('nama') }}">
+                        <input type="text" name="name" id="name" class="border-2 border-[#D9D9D9] rounded-3xl px-3 py-2" required value="{{ $user -> name }}">
                     </div>
                     <div class="flex flex-col gap-3">
-                        <label for="email" class="text-[#000000]">Email</label>
-                        <input type="email" name="email" id="email" class="border-2 border-[#D9D9D9] rounded-3xl px-3 py-2  @error('email') is-invalid @enderror" required value="{{ old('nama') }}">
-                    </div>
-                    <div class="flex flex-col gap-3">
-                        <label for="date" class="text-[#000000]">CG Date</label>
-                        <input type="date" name="date" id="date" class="border-2 border-[#D9D9D9] rounded-3xl px-3 py-2">
-                    </div>
-                    <div class="flex flex-col gap-3">
-                        <label for="time" class="text-[#000000]">CG Time</label>
-                        <input type="time" name="time" id="time" class="border-2 border-[#D9D9D9] rounded-3xl px-3 py-2">
+                        <label for="birthdate" class="text-[#000000]">Birth</label>
+                        <input type="date" name="birthdate" id="birthdate" class="border-2 border-[#D9D9D9] rounded-3xl px-3 py-2" required value="{{ $user -> birthdate }}">
                     </div>
                     <div class="flex flex-col gap-3">
                         <label for="phone" class="text-[#000000]">Phone</label>
-                        <input type="text" name="phone" id="phone" class="border-2 border-[#D9D9D9] rounded-3xl px-3 py-2 @error('phone') is-invalid @enderror" required value="{{ old('phone') }}">
+                        <input type="text" name="phone" id="phone" class="border-2 border-[#D9D9D9] rounded-3xl px-3 py-2" required value="{{ $user -> phone }}">
                     </div>
                     <div class="flex flex-col gap-3">
-                        <label for="location" class="text-[#000000]">Location</label>
-                        <input type="text" name="location" id="location" class="border-2 border-[#D9D9D9] rounded-3xl px-3 py-2">
+                        <label for="address" class="text-[#000000]">Address</label>
+                        <input type="text" name="address" id="address" class="border-2 border-[#D9D9D9] rounded-3xl px-3 py-2" required value="{{ $user -> address }}">
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <label for="line" class="text-[#000000]">ID Line</label>
+                        <input type="text" name="line" id="line" class="border-2 border-[#D9D9D9] rounded-3xl px-3 py-2" required value="{{ $user -> line }}">
                     </div>
                     <div class="flex flex-row gap-3">
                         <button class="btn btn-wide w-full bg-[#000000] mt-2">

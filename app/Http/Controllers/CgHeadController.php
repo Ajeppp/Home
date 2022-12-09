@@ -18,7 +18,9 @@ class CgHeadController extends Controller
 
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
+
+        // validate data
+        $request->validate([
             'name' => 'required',
             'email' => 'required|email:dns|unique:cg_heads',
             'date' => 'required',
