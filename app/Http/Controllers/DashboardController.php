@@ -19,13 +19,6 @@ class DashboardController extends Controller
         ]);
     }
 
-    public function cg()
-    {
-        return view('dashboard.cg', [
-            'title' => 'CG'
-        ]);
-    }
-
     public function discipleship()
     {
         return view('dashboard.discipleship', [
