@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\User;
-use App\Http\Controllers\CgHead;
+use App\Http\Controllers\CgHeadController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
@@ -32,11 +32,15 @@ Route::get('/logout', [LoginController::class, 'logout']);
 // untuk show semua url yg bs diakses
 Route::get('/', [DashboardController::class, 'index']);
 Route::get('/aboutus', [DashboardController::class, 'aboutus']);
-Route::get('/cg', [DashboardController::class, 'cg']);
 Route::get('/discipleship', [DashboardController::class, 'discipleship']);
 Route::get('/media', [DashboardController::class, 'media']);
 Route::get('/location', [DashboardController::class, 'location']);
 Route::get('/service', [DashboardController::class, 'service']);
+
+// untuk admin daftar cg
+Route::get('/cg', [CgHeadController::class, 'cg']);
+Route::post('/cg',[CgHeadController::class, 'store']);
+
 
 // ini yang bs akses cm yg bs login ->middleware('auth')
 
