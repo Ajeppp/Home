@@ -36,6 +36,7 @@ Route::get('/cg', [DashboardController::class, 'cg']);
 Route::get('/discipleship', [DashboardController::class, 'discipleship']);
 Route::get('/media', [DashboardController::class, 'media']);
 Route::get('/location', [DashboardController::class, 'location']);
+Route::get('/service', [DashboardController::class, 'service']);
 
 // ini yang bs akses cm yg bs login ->middleware('auth')
 

@@ -46,4 +46,11 @@ class DashboardController extends Controller
             'title' => 'Location'
         ]);
     }
+
+    public function service()
+    {
+        return view('dashboard.service', [
+            'title' => 'Service'
+        ]);
+    }
 }

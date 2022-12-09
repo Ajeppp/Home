@@ -86,7 +86,7 @@
         {{-- Makna Logo --}}
         <div class="bg-[#F0F0F0] text-[#222222] flex flex-col md:flex-row h-max px-10 md:px-32 py-10 items-center md:items-start md:justify-between">
             <div class="flex flex-col h-max md:text-left text-center items-center md:items-start md:justify-start md:w-4/6">
-                <img src="https://media.discordapp.net/attachments/943536943948513291/1047498370270363648/gpdi-hebron-gading-serpong-41181523042016.png" alt="logo" class="w-[150px] bg-no-repeat object-cover">
+                <img src="{{ asset('images/logohebron.png') }}" alt="logo" class="w-[150px] bg-no-repeat object-cover">
                 <h1 class="font-bold text-[30px]">Makna Logo</h1>
                 <p class="font-medium text-[20px]">GPdI Hebron - Gading Serpong</p>
             </div>
@@ -121,7 +121,7 @@
         {{-- Makna Hebron --}}
         <div class="bg-[url('https://www.planetshakers.com/wp-content/uploads/2022/02/planetshakers-urbanlife-2022-bg.jpg')] text-[#222222] flex flex-col md:flex-row h-max px-10 md:px-32 py-16 items-center md:items-start md:justify-between">
             <div class="flex flex-col h-max md:text-left text-center items-center md:items-start md:justify-start">
-                <img src="https://media.discordapp.net/attachments/943536943948513291/1047498370270363648/gpdi-hebron-gading-serpong-41181523042016.png" alt="logo" class="w-[150px] bg-no-repeat object-cover">
+                <img src="{{ asset('images/logohebron.png') }}" alt="logo" class="w-[150px] bg-no-repeat object-cover">
                 <h1 class="font-bold text-[30px]">Makna Kata Hebron</h1>
                 <p class="font-medium text-[20px]">GPdI Hebron - Gading Serpong</p>
             </div>
