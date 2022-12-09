@@ -15,23 +15,55 @@
 
         {{-- Content --}}
         <div class="flex flex-col items-center gap-[70px] md:py-[70px]">
-            <div class="flex md:flex-row flex-col md:gap-[70px] gap-[25px] items-center">
-                <div class="flex flex-col">
-                    <p class="font-bold text-[30px]">Sunday Service</p>
-                    <p class="font-bold text-[30px]">GPdI Hebron</p>
-                    <p>Ibadah Raya Umum GPdI Hebron dilakukan secara</p>
-                    <p>On-Site & Youtube Live-Steaming (Ibadah ke-2)</p>
+            <div class="flex md:flex-row flex-col gap-10 mt-10 items-center md:justify-center">
+                <div class="flex flex-col w-5/6 md:w-[350px]">
+                    <p class="font-bold text-[30px] text-center md:text-left">Sunday Service</p>
+                    <p class="font-bold text-[30px] text-center md:text-left">GPdI Hebron</p>
+                    <p class="text-justify">
+                        Ibadah Raya Umum GPdI Hebron dilakukan secara 
+                        On-Site & Youtube Live-Steaming (Ibadah ke-2).
+                    </p>
                 </div>
-                <img src="{{ asset('images/SundayService.png') }}" alt="Picture" class="bg-no-repeat object-cover w-[500px]">
+                <div class="md:w-2/6 w-5/6">
+                    <img src="{{ asset('images/SundayService.png') }}" alt="Picture" class="bg-no-repeat object-cover">
+                </div>
             </div>
-            <div class="flex md:flex-row flex-col md:gap-[70px] gap-[25px] items-center">
-                <div class="flex flex-col">
-                    <p class="font-bold text-[30px]">Sunday Service</p>
-                    <p class="font-bold text-[30px]">GPdI Hebron</p>
-                    <p>Ibadah Raya Umum GPdI Hebron dilakukan secara</p>
-                    <p>On-Site & Youtube Live-Steaming (Ibadah ke-2)</p>
+            <div class="flex md:flex-row flex-col gap-10 items-center md:justify-center">
+                <div class="flex flex-col w-5/6 md:w-[350px]">
+                    <p class="font-bold text-[30px] text-center md:text-left">Speaker Of Truth</p>
+                    <p class="font-bold text-[30px] text-center md:text-left">SPoT</p>
+                    <p class="text-justify">
+                        SPoT adalah ibadah bagi pemuda-pemudi GPdI Hebron 
+                        sebagai wadah untuk membangun iman.
+                    </p>
                 </div>
-                <img src="{{ asset('images/SPoT.png') }}" alt="Picture" class="bg-no-repeat object-cover w-[500px]">
+                <div class="md:w-2/6 w-5/6">
+                    <img src="{{ asset('images/SPoT.png') }}" alt="Picture" class="bg-no-repeat object-cover">
+                </div>
+            </div>
+            <div class="flex md:flex-row flex-col gap-10 items-center md:justify-center">
+                <div class="flex flex-col w-5/6 md:w-[350px]">
+                    <p class="font-bold text-[30px] text-center md:text-left">Descendants Of Truth's DoT's</p>
+                    <p class="text-justify">
+                        DoT's adalah ibadah bagi remaja GPdI Hebron sebagai 
+                        tempat untuk membangun iman bersama.
+                    </p>
+                </div>
+                <div class="md:w-2/6 w-5/6">
+                    <img src="{{ asset('images/dots.png') }}" alt="Picture" class="bg-no-repeat object-cover">
+                </div>
+            </div>
+            <div class="flex md:flex-row flex-col gap-10 items-center md:justify-center">
+                <div class="flex flex-col w-5/6 md:w-[350px]">
+                    <p class="font-bold text-[30px] text-center md:text-left">Hebron Kids</p>
+                    <p class="text-justify">
+                        Hebron Kids adalah ibadah bagi anak-anak GPdI Hebron sebagai 
+                        tempat untuk membangun iman dan mengenal Tuhan.
+                    </p>
+                </div>
+                <div class="md:w-2/6 w-5/6">
+                    <img src="{{ asset('images/kids.png') }}" alt="Picture" class="bg-no-repeat object-cover">
+                </div>
             </div>
         </div>
        

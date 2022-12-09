@@ -21,7 +21,7 @@
             <a href="/discipleship" class="block py-2 pl-3 pr-4 text-[#ffffff] tracking-wide hover:text-gray-500">DISCIPLESHIP</a>
           </li>
           <li>
-            <a href="/media" class="block py-2 pl-3 pr-4 text-[#ffffff] tracking-wide hover:text-gray-500">MEDIA</a>
+            <a href="/service" class="block py-2 pl-3 pr-4 text-[#ffffff] tracking-wide hover:text-gray-500">SERVICE</a>
           </li>
           <li>
             <a href="/location" class="block py-2 pl-3 pr-4 text-[#ffffff] tracking-wide hover:text-gray-500">LOCATION</a>
