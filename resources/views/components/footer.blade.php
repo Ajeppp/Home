@@ -2,9 +2,9 @@
 <div class="flex flex-col md:flex-row bg-[#F0F0F0] text-[#222222] px-10 pt-16 pb-10 md:justify-between">
     <div class="flex flex-col gap-6">
         <div class="flex flex-row -mx-8 gap-5">
-            <img src="https://gpdi-hebron.com/website/images/banner/gpdi-hebron-gading-serpong-41181523042016.png" alt="" width="100px">
-            <img src="http://www.gpdi-hebron.com/website/images/media/7a015998c9ecd4adba19674917d15b673658eb91.png" alt="" width="100px">
-            <img src="https://gpdi-hebron.com/website/images/banner/right-banner-24221106122015.png" alt="" width="100px">
+            <img src="{{ asset('images/logohebron.png') }}" alt="" width="100px">
+            <img src="{{ asset('images/logospot.png') }}" alt="" width="100px">
+            <img src="{{ asset('images/logoboneka.png') }}" alt="" width="100px">
         </div>
         <p class="font-medium">Pasar Modern Paramount <br />
             Jl. Boulevard Gading Serpong <br>
@@ -32,7 +32,7 @@
                     </div>
                     <div>
                         <p class="font-bold">Service</p>
-                        <p class="font-medium text-[#0A0A0A]">On-Site Service</p>
+                        <a href="/service"><p class="font-medium text-[#0A0A0A]">On-Site Service</p></a>
                     </div>
                     <div>
                         <p class="font-bold">Get Involved</p>

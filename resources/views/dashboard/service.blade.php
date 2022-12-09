@@ -14,8 +14,25 @@
         <x-navbar />
 
         {{-- Content --}}
-        <div>
-            
+        <div class="flex flex-col items-center gap-[70px] md:py-[70px]">
+            <div class="flex md:flex-row flex-col md:gap-[70px] gap-[25px] items-center">
+                <div class="flex flex-col">
+                    <p class="font-bold text-[30px]">Sunday Service</p>
+                    <p class="font-bold text-[30px]">GPdI Hebron</p>
+                    <p>Ibadah Raya Umum GPdI Hebron dilakukan secara</p>
+                    <p>On-Site & Youtube Live-Steaming (Ibadah ke-2)</p>
+                </div>
+                <img src="{{ asset('images/SundayService.png') }}" alt="Picture" class="bg-no-repeat object-cover w-[500px]">
+            </div>
+            <div class="flex md:flex-row flex-col md:gap-[70px] gap-[25px] items-center">
+                <div class="flex flex-col">
+                    <p class="font-bold text-[30px]">Sunday Service</p>
+                    <p class="font-bold text-[30px]">GPdI Hebron</p>
+                    <p>Ibadah Raya Umum GPdI Hebron dilakukan secara</p>
+                    <p>On-Site & Youtube Live-Steaming (Ibadah ke-2)</p>
+                </div>
+                <img src="{{ asset('images/SPoT.png') }}" alt="Picture" class="bg-no-repeat object-cover w-[500px]">
+            </div>
         </div>
        
         {{-- Footer --}}

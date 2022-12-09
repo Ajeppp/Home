@@ -24,8 +24,8 @@
                 <div class="flex justify-center">
                     </div>
                 <div class="flex flex-col md:w-8/12 h-max text-center md:text-left items-center md:items-start md:w-1/2">
-                    <img src="https://media.discordapp.net/attachments/943536943948513291/1047498370270363648/gpdi-hebron-gading-serpong-41181523042016.png" alt="logo" class="w-[150px] bg-no-repeat object-cover">
-                    <h1 class="font-bold text-[30px] ">Welcome to GPdI Hebron</h1>
+                    <img src="{{ asset('images/logohebron.png') }}" alt="logo" class="w-[150px] bg-no-repeat object-cover">
+                    <h1 class="font-bold text-[30px]">Welcome to GPdI Hebron</h1>
                     <p class="font-medium text-[20px]">Empowering Generations To Win Generations</p>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                     </div>
                     <x-content />
                 </div>
-                <img src="https://cdn.discordapp.com/attachments/1044637020380745830/1047701604306006126/image_5.png" class="hidden md:bg-no-repeat object-cover mt-8 md:block">
+                <img src="{{ asset('images/faith.png') }}" class="hidden md:bg-no-repeat object-cover mt-8 md:block">
         </div>
 
         {{-- Contact Us --}}
@@ -85,7 +85,7 @@
                         </div>
                     </button>
                 </div>
-                <img src="https://media.discordapp.net/attachments/943536943948513291/1047498370270363648/gpdi-hebron-gading-serpong-41181523042016.png" alt="logo" class="hidden md:block w-[200px] bg-no-repeat object-cover">
+                <img src="{{ asset('images/logohebron.png') }}" alt="logo" class="hidden md:block w-[200px] bg-no-repeat object-cover">
         </div>
 
         {{-- Footer --}}
