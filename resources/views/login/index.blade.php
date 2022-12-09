@@ -9,7 +9,6 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <h1>Login</h1>
     @if(session()->has('success'))
         <div class="alert alert-success">
             {{ session('success') }}
@@ -21,30 +20,56 @@
             {{ session('loginError') }}
         </div>
     @endif
+    
+    <div class="flex justify-center my-36 ">
 
-    <form action="/login"  method="POST" class="flex flex-col w-3/5 gap-3">
-        @csrf
-  
-            <div class="flex flex-col gap-3">
-                <label for="email" class="text-[#000000]">Email</label>
-                <input type="email" name="email" id="email" class="border-2 border-[#D9D9D9] rounded-3xl px-3 py-2" autofocus required value="{{ old('email') }}">
-                {{-- @error('email')
+    <div class="flex flex-col justify-center bg-white border-white w-1/4 p-5 drop-shadow-2xl rounded-lg">
+            
+        <form action="/login" method="POST" class="grid justify-center">
+            @csrf
+            <div class="font-bold text-3xl text-black ">
+                Login
+            </div>
+            <div class="text-md mt-2">
+                Please enter your details
+            </div>
+
+            <div class="mt-5">
+                <input type="email" placeholder="Email or name" class="border-1  bg-[#D9D9D9] text-[#312626]  rounded-lg w-72 h-10 p-5" autofocus required value="{{ old('email') }}">
+            </div>
+
+            {{-- @error('email')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
                     </span>
                 @enderror --}}
+
+            <div class="mt-3">
+                <input type="password" placeholder="Password" class="border-1 bg-[#D9D9D9] text-[#312626]  rounded-lg w-72 h-10 p-5 @error('email') is-invalid @enderror" autofocus required >
             </div>
-            <div class="flex flex-col gap-3">
-                <label for="password" class="text-[#000000]">Password</label>
-                <input type="password" name="password" id="password" class="border-2 border-[#D9D9D9] rounded-3xl px-3 py-2 @error('email') is-invalid @enderror" required>
+
+            {{-- forgot password --}}
+            <div class="flex justify-end mt-2">
+                <a href="#" class="text-[#646262] text-sm">Forgot Password?</a>
             </div>
-            <div class="flex flex-row gap-3">
-                <button class="btn btn-wide w-full bg-[#000000] mt-2">
+
+            <div>
+                <button class="btn w-full bg-[#000000] mt-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="10em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M9.4 18L8 16.6l4.6-4.6L8 7.4L9.4 6l6 6Z"/></svg>
                 </button>
             </div>
-    </form>
-    <a href="/register">Register Now!</a>
+            
+            <div class="flex justify-center mt-3">
+                <div class="text-[#646262] text-sm">
+                    Don't have an account?
+                </div>
+                <a href="/register" class="text-black font-bold text-sm ml-1">Sign up</a>
+            </div>
+        
+        </form>
+    </div>
+    </div>
+
 
 </body>
 </html>
