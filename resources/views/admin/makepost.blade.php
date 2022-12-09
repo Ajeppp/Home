@@ -38,7 +38,7 @@
                    </div>
                     <div class="flex flex-col gap-3">
                         <p for="content" class="text-[#000000] font-bold text-[20px]">Content</p>
-                        <textarea type="content" name="content" id="content" class="border-2 border-[#D9D9D9] bg-white rounded-3xl px-3 py-2  @error('content') is-invalid @enderror" required value="{{ old('content') }}">
+                        <textarea type="content" name="content" id="content" class="border-2 border-[#D9D9D9] bg-white rounded-3xl px-3 py-2  @error('content') is-invalid @enderror" required value="{{ old('content') }}"></textarea>
                     </div>
                     <div class="flex flex-row gap-3">
                         <button class="btn btn-wide w-full bg-[#000000] mt-2">

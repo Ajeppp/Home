@@ -6,6 +6,8 @@
     <title>GPdI Hebron - {{ $title }}</title>
 
     @vite('resources/css/app.css')
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
 </head>
 <body>
   @if(auth()->user()->role != 1 ) 
@@ -16,7 +18,7 @@
     @section('container')
         <h1>Halaman edit user</h1>    
     @endsection --}}
-    <a href="/admin">back</a>
+    {{-- <a href="/admin">back</a> --}}
     {{-- <table class="table-fixed">
         <thead>
             <tr>
@@ -30,7 +32,9 @@
             <tr></tr>
         </tbody>
     </table> --}}
-
+    <div>
+      <a href="/admin"><iconify-icon icon="humbleicons:arrow-go-back" width="40"></iconify-icon></a>
+    </div>
     <div class="overflow-x-auto w-full">
         <table class="table w-full">
           <!-- head -->

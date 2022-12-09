@@ -68,8 +68,11 @@
                             <a href="/discipleship" class="text-sm text-white">DISCIPLESHIP</a>
                             <a href="/service" class="text-sm text-white">SERVICE</a>
                             <a href="/location" class="text-sm text-white">LOCATION</a>
-                            <a href="/login" class="text-sm text-white">LOGIN</a>
+                            @auth
                             <a href="/logout" class="text-sm text-white">LOGOUT</a>
+                            @else
+                            <a href="/login" class="text-sm text-white">LOGIN</a>
+                            @endauth
                         </div>
                     </div>
                 </div>

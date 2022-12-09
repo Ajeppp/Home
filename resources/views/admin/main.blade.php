@@ -8,31 +8,37 @@
     @vite('resources/css/app.css')
 </head>
 <body>
+    
     @if(auth()->user()->role != 1 ) 
         <script>window.location.href = "/";</script>
     @endif
-    <div class="flex justify-center item-center h-screen ">
-        <div class="flex flex-col p-5 justify-center bg-white drop-shadow-2xl rounded-lg lg:w-1/4">
-            <button class="button-primary m-3">
-                <a href="/">homepage</a> 
-            </button>
-            <button class="button-primary m-3">
-                <a href="/cg">daftar cg</a> 
-            </button>
-            <button class="button-primary m-3">
-                <a href="/admin/user">util user</a> 
-            </button>
-            <button class="button-primary m-3">
-                <a href="/admin/cg">util cg</a> 
-            </button>
-            <button class="button-primary m-3">
-                <a href="/post">make post</a>     
-            </button>
-            <button class="button-primary m-3">
-                <a href="/admin/post">util post</a>
-            </button>
+    
+    <div class="flex justify-center my-40">
+        <div class="grid justify-items-center p-5 bg-white drop-shadow-2xl rounded-[24px] w-1/4">
+            <div class="text-2xl font-bold mb-5">
+                ADMIN
+            </div>
+            <div class="border rounded-full p-1 m-2 w-72 h-10 text-center bg-stone-100 hover:bg-slate-300">
+                <button class="button-primary "><a href="/">HomePage</a> </button>
+            </div>
+            <div class="border rounded-full p-1 m-2 w-72 h-10 text-center bg-stone-100 hover:bg-slate-300">
+                <button class="button-primary"><a href="/cg">CG Register</a> </button>
+            </div>
+            <div class="border rounded-full p-1 m-2 w-72 h-10 text-center bg-stone-100 hover:bg-slate-300">
+                <button class="button-primary"><a href="/admin/user">Utilize User</a> </button>
+            </div>
+            <div class="border rounded-full p-1 m-2 w-72 h-10 text-center bg-stone-100 hover:bg-slate-300">
+                <button class="button-primary"><a href="/admin/cg">Utilize CG</a> </button>
+            </div>
+            <div class="border rounded-full p-1 m-2 w-72 h-10 text-center bg-stone-100 hover:bg-slate-300">
+                <button class="button-primary"><a href="/post">Post</a> </button>
+            </div>
+            <div class="border rounded-full p-1 m-2 w-72 h-10 text-center bg-stone-100 hover:bg-slate-300">
+                <button class="button-primary"><a href="/admin/post">Utilize Post</a> </button>
+            </div>
         </div>
     </div>
+
     {{-- <div>
         @yield('container')
     </div> --}}
