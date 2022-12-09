@@ -9,7 +9,7 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <div class="bg-[#FFFFFF] text-[#222222] md:mx-auto">
+    <div class="flex flex-col bg-[#FFFFFF] text-[#222222] md:mx-auto">
         {{-- navbar --}}
         <x-navbar />
 
@@ -23,7 +23,7 @@
             <div class="grid justify-items-center md:w-1/4">
                 <div class="flex justify-center">
                     </div>
-                <div class="flex flex-col md:w-8/12 h-max text-center md:text-left items-center md:items-start md:w-1/2">
+                <div class="flex flex-col h-max text-center md:text-left items-center md:items-start md:w-1/2">
                     <img src="{{ asset('images/logohebron.png') }}" alt="logo" class="w-[150px] bg-no-repeat object-cover">
                     <h1 class="font-bold text-[30px]">Welcome to GPdI Hebron</h1>
                     <p class="font-medium text-[20px]">Empowering Generations To Win Generations</p>
