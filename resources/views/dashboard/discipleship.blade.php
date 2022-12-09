@@ -39,10 +39,98 @@
         @auth
         <h1>Halo, ini dah login!</h1>
         @if(auth()->user()->cg_id != NULL)
+            <h1>Anda sudah terdaftar di CG</h1>
+            @php
+                $cg = App\Models\CgHead::find(auth()->user()->cg_id);
+            @endphp
+            <div>
+                <h1>CG Name: {{ $cg -> name }}</h1>
+                <h1>CG Phone: {{ $cg -> phone }}</h1>
+                <h1>CG Date: {{ $cg -> date }}</h1>
+                <h1>CG Time: {{ $cg -> time }}</h1>
+                <h1>CG Location: {{ $cg -> location }}</h1>
 
-            jadwal pertemuan
+            </div>
+            
         @else
-            pilih ketua
+            <h1>Anda belum terdaftar di CG</h1>
+
+            <div class="overflow-x-auto w-full mb-5">
+                <table class="table w-full">
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th>
+                        <label>
+                          <input type="checkbox" class="checkbox" />
+                        </label>
+                      </th>
+                      <th>Name</th>
+                      <th>Phone</th>
+                      <th>Date</th>
+                      <th>Time</th>
+                      <th>Location</th>
+                      <th>Choose</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- row 1 -->
+                    @foreach($cgs as $cg)
+                    <tr>
+                      <th>
+                        <label>
+                          <input type="checkbox" class="checkbox" />
+                        </label>
+                      </th>
+                      <td>
+                        <div class="flex items-center space-x-3">
+                          <div class="avatar">
+                            <div class="mask mask-squircle w-12 h-12">
+                              <img src="https://gpdi-hebron.com/website/images/banner/gpdi-hebron-gading-serpong-41181523042016.png" alt="" />
+                            </div>
+                          </div>
+                          <div>
+                            <div class="font-bold">{{ $cg -> name }}</div>
+                            <div class="text-sm opacity-50">United States</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        {{ $cg -> email }}
+                        <br/>
+                        <span class="badge badge-ghost badge-sm">
+                            hai
+                        </span>
+                      </td>
+                      <th>
+                        {{ $cg -> date }}
+                      </th>
+                      <th>{{ $cg -> time }}</th>
+                      <th>{{ $cg -> location }}</th>
+                      <th>
+                        <a href="/discipleship/{{ $cg->id }}">
+                            <button class="btn btn-ghost btn-xs">Select</button>
+                        </a>
+                   
+                      </th>
+                    </tr>
+                    @endforeach
+                  </tbody>
+                  <!-- foot -->
+                  <tfoot>
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Location</th>
+                        <th>Choose</th>
+                    </tr>
+                  </tfoot>
+                  
+                </table>
+              </div>
         @endif
         {{-- content --}}
         {{-- content --}}

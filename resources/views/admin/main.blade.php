@@ -8,13 +8,30 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <div>
-        <a href="/">homepage</a> |
-        <a href="/cg">daftar cg</a> |
-        <a href="/admin/user">util user</a> |
-        <a href="/admin/cg">util cg</a> |
-        <a href="/post">make post</a> |
-        <a href="/admin/post">util post</a> 
+    @if(auth()->user()->role != 1 ) 
+        <script>window.location.href = "/";</script>
+    @endif
+    <div class="flex justify-center item-center h-screen ">
+        <div class="flex flex-col p-5 justify-center bg-white drop-shadow-2xl rounded-lg lg:w-1/4">
+            <button class="button-primary m-3">
+                <a href="/">homepage</a> 
+            </button>
+            <button class="button-primary m-3">
+                <a href="/cg">daftar cg</a> 
+            </button>
+            <button class="button-primary m-3">
+                <a href="/admin/user">util user</a> 
+            </button>
+            <button class="button-primary m-3">
+                <a href="/admin/cg">util cg</a> 
+            </button>
+            <button class="button-primary m-3">
+                <a href="/post">make post</a>     
+            </button>
+            <button class="button-primary m-3">
+                <a href="/admin/post">util post</a>
+            </button>
+        </div>
     </div>
     {{-- <div>
         @yield('container')

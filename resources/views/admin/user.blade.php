@@ -8,6 +8,9 @@
     @vite('resources/css/app.css')
 </head>
 <body>
+  @if(auth()->user()->role != 1 ) 
+      <script>window.location.href = "/";</script>
+  @endif
     {{-- @extends('admin.main')
 
     @section('container')

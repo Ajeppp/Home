@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+use App\Models\CgHead;
+use App\Models\User;
+
 
 class DashboardController extends Controller
 {
@@ -21,10 +24,27 @@ class DashboardController extends Controller
 
     public function discipleship()
     {
+        $cgs = CgHead::all();
+        
         return view('dashboard.discipleship', [
-            'title' => 'Discipleship'
+            'title' => 'Discipleship',
+            'cgs' => $cgs
         ]);
     }
+
+    public function chooseCg(User $user, $cg)
+    {
+        $logged = auth()->user()->id;
+        $user = User::find($logged);
+
+
+        // set cg_id on user based on cg_head_id from routes
+        $user->cg_id = $cg;
+        $user->save();
+
+        return redirect('/discipleship');
+    }
+
 
     public function media()
     {

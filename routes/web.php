@@ -31,63 +31,57 @@ Route::get('/login', [LoginController::class, 'index'])->name('login')->middlewa
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::get('/logout', [LoginController::class, 'logout']);
 
-// untuk show semua url yg bs diakses
-Route::get('/', [DashboardController::class, 'index']);
-Route::get('/aboutus', [DashboardController::class, 'aboutus']);
-Route::get('/discipleship', [DashboardController::class, 'discipleship']);
-Route::get('/media', [DashboardController::class, 'media']);
-Route::get('/location', [DashboardController::class, 'location']);
-Route::get('/service', [DashboardController::class, 'service']);
-
-// untuk admin
-
-// daftar CG
-Route::get('/cg', [CgHeadController::class, 'cg']);
-Route::post('/cg',[CgHeadController::class, 'store']);
-
-// bikin post
-Route::get('/post', [PostController::class, 'index']);
-Route::post('/post', [PostController::class, 'store']);
-
-// view CRUD user dan cg
-Route::get('/admin', [AdminController::class, 'index']);
-Route::get('/admin/user', [AdminController::class, 'user']);
-Route::get('/admin/cg', [AdminController::class, 'cg']);
-Route::get('/admin/post' , [AdminController::class, 'post']);
-
-// CRUD USER CG POST
-Route::patch('/admin/user/{user}/role', [AdminController::class, 'role']);
-Route::delete('/admin/user/{user}/delete', [AdminController::class, 'delete']);
-Route::get('admin/user/{user}/edit', [AdminController::class, 'editUser']);
-Route::put('admin/user/{user}', [AdminController::class, 'updateUser']);
-
-Route::get('/admin/post/{post}/edit', [AdminController::class, 'editPost']);
-Route::put('/admin/post/{post}', [AdminController::class, 'updatePost']);
-
-route::get('/admin/cg/{cg}/edit', [AdminController::class, 'editCg']);
-route::put('/admin/cg/{cg}', [AdminController::class, 'updateCg']);
-
-Route::delete('/admin/post/{post}/delete', [AdminController::class, 'deletePost']);
-
-// setting post
+Route::controller(DashboardController::class)->group(function() {
+    // untuk show semua url yg bs diakses
+    Route::get('/', 'index');
+    Route::get('/aboutus', 'aboutus');
+    Route::get('/discipleship', 'discipleship');
+    Route::get('/discipleship/{cg}', 'chooseCg');
+    Route::get('/media', 'media');
+    Route::get('/location', 'location');
+    Route::get('/service', 'service');
+});
 
 
-// ini yang bs akses cm yg bs login ->middleware('auth')
+// KHUSUS ADMIN // 
+Route::middleware('auth')->controller(CgHeadController::class)->group(function() {
 
+    // DAFTARIN CG
+    Route::get('/cg',  'cg');
+    Route::post('/cg', 'store');    
+});
 
-// ini component buatan jefer, kalo mo cek nyalain aja lagi route nya -- geri
-// Route::get('/button', function () {
-    //     return view('buttonView');
-// });
+// jangan lupa kasi middlware auth
+Route::middleware('auth')->controller(PostController::class)->group(function() {
 
-// Route::get('/footer', function () {
-//     return view('footerView');
-// });
+    // BIKIN POST
+    Route::get('/post', 'index');
+    Route::post('/post', 'store');
+});
 
-// Route::get('/navbar', function () {
-//     return view('navbarView');
-// });
+// jangan lupa kasi middleware auth
+Route::middleware('auth')->controller(AdminController::class)->group(function() {
 
-// Route::get('/content', function () {
-//     return view('contentView');
-// });
+    // VIEW ADMIN
+    Route::get('/admin', 'index');
+    Route::get('/admin/user', 'user');
+    Route::get('/admin/cg', 'cg');
+    Route::get('/admin/post' , 'post');
+    
+    // MAKE ADMIN, EDIT, DELETE USER
+    Route::patch('/admin/user/{user}/role', 'role');
+    Route::delete('/admin/user/{user}/delete', 'delete');
+    Route::get('admin/user/{user}/edit', 'editUser');
+    Route::put('admin/user/{user}', 'updateUser');
+    
+    // EDIT, UPDATE, DELETE POST
+    Route::get('/admin/post/{post}/edit', 'editPost');
+    Route::put('/admin/post/{post}', 'updatePost');
+    Route::delete('/admin/post/{post}/delete', 'deletePost');
+    
+    // EDIT, UPDATE CG
+    route::get('/admin/cg/{cg}/edit', 'editCg');
+    route::put('/admin/cg/{cg}', 'updateCg');
+    
+});
+// KHUSUS ADMIN //
