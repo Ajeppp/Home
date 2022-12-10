@@ -95,7 +95,7 @@
                     </div>
                     <div class="flex flex-col mt-2">
                         <label for="phone" class="text-[#000000]">Phone</label>
-                        <input type="text" name="phone" id="phone" class="border-1  bg-[#D9D9D9] text-[#312626]  rounded-lg w-72 h-10 p-5 @error('phone') is-invalid @enderror" required value="{{ old('phone') }}">
+                        <inp{{ ut type }}="text" name="phone" id="phone" class="border-1  bg-[#D9D9D9] text-[#312626]  rounded-lg w-72 h-10 p-5 @error('phone') is-invalid @enderror" required value="{{ old('phone') }}">
                     </div>
                     <div class="flex flex-col mt-2">
                         <label for="location" class="text-[#000000]">Location</label>

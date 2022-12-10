@@ -14,13 +14,6 @@
     <script>window.location.href = "/";</script>
   @endif
 
-    {{-- @extends('admin.main')
-
-    @section('container')
-        <h1>Halaman edit post</h1>    
-    @endsection --}}
-
-    {{-- <a href="/admin">back</a> --}}
     <div>
       <a href="/admin"><iconify-icon icon="humbleicons:arrow-go-back" width="40"></iconify-icon></a>
     </div>
