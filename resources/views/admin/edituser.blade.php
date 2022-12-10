@@ -91,7 +91,7 @@
                     </div>
 
                     <div class="flex flex-row mt-2">
-                        <a href="/admin" class="btn btn-wide w-full bg-[#000000] mt-3">
+                        <a href="/admin/user/" class="btn btn-wide w-full bg-[#000000] mt-3">
                             <iconify-icon icon="akar-icons:arrow-back-thick-fill"></iconify-icon>
                         </a>
                     </div>

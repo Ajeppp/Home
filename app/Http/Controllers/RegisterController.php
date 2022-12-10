@@ -38,7 +38,7 @@ class RegisterController extends Controller
         $user->password = bcrypt($request->password);
         $user->save();
 
-        return redirect('/login')->with('success', 'Register Success');
+        return redirect('/login')->with('success', 'Your account has been created!');
 
     
     }

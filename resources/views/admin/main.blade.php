@@ -38,9 +38,5 @@
             </div>
         </div>
     </div>
-
-    {{-- <div>
-        @yield('container')
-    </div> --}}
 </body>
 </html>

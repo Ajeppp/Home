@@ -38,8 +38,10 @@ class DashboardController extends Controller
         $user = User::find($logged);
 
 
-        // set cg_id on user based on cg_head_id from routes
-        $user->cg_id = $cg;
+        // check only cg_id available on cg_heads table are allowed to inserted
+        $cgconfirm = CgHead::where('id', $cg)->firstOrFail();
+
+        $user->cg_id = $cgconfirm->id;
         $user->save();
 
         return redirect('/discipleship');

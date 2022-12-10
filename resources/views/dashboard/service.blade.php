@@ -15,7 +15,7 @@
 
         {{-- Content --}}
         <div class="flex flex-col items-center gap-[70px] mb-10 md:py-[70px]">
-            <div class="flex md:flex-row flex-col md:gap-[100px] mt-10 items-center md:justify-center">
+            <div class="flex md:flex-row flex-col md:gap-16 mt-10 items-center md:justify-center">
                 <div class="flex flex-col md:w-1/6 w-5/6">
                     <p class="font-bold text-[30px] text-center md:text-left">Sunday Service</p>
                     <p class="font-bold text-[30px] text-center md:text-left">GPdI Hebron</p>
@@ -28,7 +28,7 @@
                     <img src="{{ asset('images/SundayService.png') }}" alt="Picture" class="bg-no-repeat object-cover">
                 </div>
             </div>
-            <div class="flex md:flex-row flex-col md:gap-[100px] items-center md:justify-center">
+            <div class="flex md:flex-row flex-col md:gap-16 items-center md:justify-center">
                 <div class="flex flex-col md:w-1/6 w-5/6">
                     <p class="font-bold text-[30px] text-center md:text-left">Speaker Of Truth</p>
                     <p class="font-bold text-[30px] text-center md:text-left">SPoT</p>
@@ -41,7 +41,7 @@
                     <img src="{{ asset('images/SPoT.png') }}" alt="Picture" class="bg-no-repeat object-cover">
                 </div>
             </div>
-            <div class="flex md:flex-row flex-col md:gap-[100px] items-center md:justify-center">
+            <div class="flex md:flex-row flex-col md:gap-16 items-center md:justify-center">
                 <div class="flex flex-col md:w-1/6 w-5/6">
                     <p class="font-bold text-[30px] text-center md:text-left">Descendants Of Truth's DoT's</p>
                     <p class="text-justify">
@@ -53,7 +53,7 @@
                     <img src="{{ asset('images/dots.png') }}" alt="Picture" class="bg-no-repeat object-cover">
                 </div>
             </div>
-            <div class="flex md:flex-row flex-col md:gap-[100px] items-center md:justify-center">
+            <div class="flex md:flex-row flex-col md:gap-16 items-center md:justify-center">
                 <div class="flex flex-col md:w-1/6 w-5/6">
                     <p class="font-bold text-[30px] text-center md:text-left">Hebron Kids</p>
                     <p class="text-justify">

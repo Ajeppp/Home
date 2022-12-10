@@ -60,7 +60,7 @@
                 <!-- mobile navbar -->
                 <div class="mobile-navbar">
                     <!-- navbar wrapper -->
-                    <div class="fixed left-0 w-full h-50 p-5 bg-[#1F1D16] rounded-lg shadow-xl top-16" x-show="isOpen"
+                    <div class="absolute left-0 w-full h-50 p-5 bg-[#1F1D16] rounded-lg shadow-xl top-16" x-show="isOpen"
                         @click.away=" isOpen = false">
                         <div class="flex flex-col space-y-6">
                             <a href="/" class="text-sm text-white">HOME</a>
