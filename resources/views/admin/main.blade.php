@@ -13,29 +13,41 @@
         <script>window.location.href = "/";</script>
     @endif
     
-    <div class="flex justify-center my-40">
-        <div class="grid justify-items-center p-5 bg-white drop-shadow-2xl rounded-[24px] w-1/4">
-            <div class="text-2xl font-bold mb-5">
+    <div class="flex flex-col h-screen items-center justify-center md:items-center md:justify-center">
+        <div class="flex flex-col justify-center p-5 bg-white drop-shadow-2xl rounded-lg md:w-3/12 w-5/6">
+            <div class="text-2xl text-center font-bold mb-5">
                 ADMIN
             </div>
-            <div class="border rounded-full p-1 m-2 w-72 h-10 text-center bg-stone-100 hover:bg-slate-300">
-                <button class="button-primary "><a href="/">HomePage</a> </button>
-            </div>
-            <div class="border rounded-full p-1 m-2 w-72 h-10 text-center bg-stone-100 hover:bg-slate-300">
-                <button class="button-primary"><a href="/cg">CG Register</a> </button>
-            </div>
-            <div class="border rounded-full p-1 m-2 w-72 h-10 text-center bg-stone-100 hover:bg-slate-300">
-                <button class="button-primary"><a href="/admin/user">Utilize User</a> </button>
-            </div>
-            <div class="border rounded-full p-1 m-2 w-72 h-10 text-center bg-stone-100 hover:bg-slate-300">
-                <button class="button-primary"><a href="/admin/cg">Utilize CG</a> </button>
-            </div>
-            <div class="border rounded-full p-1 m-2 w-72 h-10 text-center bg-stone-100 hover:bg-slate-300">
-                <button class="button-primary"><a href="/post">Post</a> </button>
-            </div>
-            <div class="border rounded-full p-1 m-2 w-72 h-10 text-center bg-stone-100 hover:bg-slate-300">
-                <button class="button-primary"><a href="/admin/post">Utilize Post</a> </button>
-            </div>
+            <a href="/">
+                <div class="border rounded-lg p-1 m-2 text-center bg-stone-100 hover:bg-slate-300">
+                    <button class="button-primary ">Home Page</button>
+                </div>
+            </a> 
+            <a href="/cg">
+                <div class="border rounded-lg p-1 m-2 text-center bg-stone-100 hover:bg-slate-300">
+                    <button class="button-primary">CG Register</button>
+                </div>
+            </a>
+            <a href="/admin/user">
+                <div class="border rounded-lg p-1 m-2 text-center bg-stone-100 hover:bg-slate-300">
+                    <button class="button-primary">Utilize User </button>
+                </div>
+            </a>
+            <a href="/admin/cg">
+                <div class="border rounded-lg p-1 m-2 text-center bg-stone-100 hover:bg-slate-300">
+                    <button class="button-primary">Utilize CG </button>
+                </div>
+            </a>
+            <a href="/post">
+                <div class="border rounded-lg p-1 m-2 text-center bg-stone-100 hover:bg-slate-300">
+                    <button class="button-primary">Post</button>
+                </div>
+            </a>
+            <a href="/admin/post">
+                <div class="border rounded-lg p-1 m-2 text-center bg-stone-100 hover:bg-slate-300">
+                    <button class="button-primary">Utilize Post</button> 
+                </div>
+            </a>
         </div>
     </div>
 </body>

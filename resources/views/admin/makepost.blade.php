@@ -7,7 +7,7 @@
     @vite('resources/css/app.css')
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </head>
-<body class="bg-[#FFFFFF]">
+<body class="bg-[#FFFFFF] flex justify-center">
     @if(auth()->user()->role != 1 ) 
         <script>window.location.href = "/";</script>
     @endif
@@ -29,7 +29,7 @@
             </div>
         </div>
     @endif
-    <div class="md:mx-auto h-screen flex flex-col items-center justify-center w-2/6">
+    <div class="h-screen flex flex-col justify-center items-center md:items-center md:justify-center w-5/6">
         <div class="flex flex-col items-center bg-white w-5/6 md:w-4/6 border-white p-5 drop-shadow-2xl rounded-lg">
             <div class="flex flex-col w-full justify-left items-left">
                 <a href="/admin"><iconify-icon icon="humbleicons:arrow-go-back" width="40"></iconify-icon></a>
