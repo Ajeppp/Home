@@ -13,13 +13,13 @@
   <x-navbar />
   @guest
   {{-- content --}}
-  <div class="text-[#222222] flex flex-row h-max px-52 mt-32 justify-between gap-20 pb-32">
-      <div class="flex flex-col justify-start w-2/5">
-          <img src="{{ asset('images/logohebron.png') }}" alt="logo" class="w-[150px] bg-no-repeat object-cover -ml-12">
+  <div class="text-[#222222] flex flex-col md:flex-row h-max md:px-52 items-center mt-32 md:justify-between gap-20 pb-32">
+      <div class="flex flex-col items-center md:items-start w-5/6 md:w-2/5">
+          <img src="{{ asset('images/logohebron.png') }}" alt="logo" class="w-[150px] bg-no-repeat object-cover md:-ml-12">
           <h1 class="font-bold text-[35px]">HOME</h1>
           <h1 class="font-bold text-[35px]">GPdI Hebron</h1>
       </div>
-      <div class="flex flex-col w-3/5 gap-3">
+      <div class="flex flex-col w-5/6 md:w-3/5 gap-3">
           <h1 class="font-bold text-[22px]">Apa itu "HOME"?</h1>
           <p class="text-[20px] text-justify">
               Setiap jemaat Hebron adalah jiwa yang dipercayakan oleh Tuhan kepada kita, dan Setiap
@@ -45,28 +45,28 @@
           <!-- head -->
           <thead>
             <tr>
-              <th>
+              <th class="bg-[#F0F0F0]">
                 <label>
-                  <input type="checkbox" class="checkbox" />
+                  <input type="checkbox" class="checkbox border-[#312626] border-2" />
                 </label>
               </th>
-              <th>Name</th>
-              <th>Phone</th>
-              <th>Date</th>
-              <th>Time</th>
-              <th>Location</th>
-              <th>Contact</th>
+              <th class="bg-[#F0F0F0] text-black">Name</th>
+              <th class="bg-[#F0F0F0] text-black">Email</th>
+              <th class="bg-[#F0F0F0] text-black">Date</th>
+              <th class="bg-[#F0F0F0] text-black">Time</th>
+              <th class="bg-[#F0F0F0] text-black">Location</th>
+              <th class="bg-[#F0F0F0] text-black">Contact</th>
             </tr>
           </thead>
           <tbody>
             <!-- row 1 -->
             <tr>
-              <th>
+              <th class="bg-[#FFFFFF] text-[#312626]">
                 <label>
-                  <input type="checkbox" class="checkbox" />
+                  <input type="checkbox" class="checkbox border-[#312626] border-2" />
                 </label>
               </th>
-              <td>
+              <td class="bg-[#FFFFFF] text-[#312626]">
                 <div class="flex items-center space-x-3">
                   <div class="avatar">
                     <div class="mask mask-squircle w-12 h-12">
@@ -78,19 +78,19 @@
                   </div>
                 </div>
               </td>
-              <td>
+              <td class="bg-[#FFFFFF] text-[#312626]">
                 {{ $cg -> email }}
                 <br/>
-                <span class="badge badge-ghost badge-sm">
+                <span class="badge badge-ghost badge-sm border-[#F0F0F0] bg-[#F0F0F0] text-[#312626]">
                     {{ $cg -> id }}
                 </span>
               </td>
-              <th>
+              <th class="bg-[#FFFFFF] text-[#312626]">
                 {{ $cg -> date }}
               </th>
-              <th>{{ $cg -> time }}</th>
-              <th>{{ $cg -> location }}</th>
-              <th>
+              <th class="bg-[#FFFFFF] text-[#312626]">{{ $cg -> time }}</th>
+              <th class="bg-[#FFFFFF] text-[#312626]">{{ $cg -> location }}</th>
+              <th class="bg-[#FFFFFF] text-[#312626]">
                 <a href="https://wa.me/{{ $cg->phone }}">
                   Click to chat!    
                 </a>
@@ -100,13 +100,13 @@
           <!-- foot -->
           <tfoot>
             <tr>
-                <th></th>
-                <th>Name</th>
-                <th>Phone</th>
-                <th>Date</th>
-                <th>Time</th>
-                <th>Location</th>
-                <th>Contact</th>
+              <th class="bg-[#F0F0F0] text-black"></th>
+              <th class="bg-[#F0F0F0] text-black">Name</th>
+              <th class="bg-[#F0F0F0] text-black">Email</th>
+              <th class="bg-[#F0F0F0] text-black">Date</th>
+              <th class="bg-[#F0F0F0] text-black">Time</th>
+              <th class="bg-[#F0F0F0] text-black">Location</th>
+              <th class="bg-[#F0F0F0] text-black">Contact</th>
             </tr>
           </tfoot>
         </table>
@@ -115,31 +115,31 @@
       <div class="overflow-x-auto w-full">
           <table class="table w-full">
             <!-- head -->
-            <thead>
-              <tr>
-                <th>
+            <thead >
+              <tr >
+                <th class="bg-[#F0F0F0]">
                   <label>
-                    <input type="checkbox" class="checkbox" />
+                    <input type="checkbox" class="checkbox border-[#312626] border-2" />
                   </label>
                 </th>
-                <th>Name</th>
-                <th>Phone</th>
-                <th>Date</th>
-                <th>Time</th>
-                <th>Location</th>
-                <th>Choose</th>
+                <th class="bg-[#F0F0F0] text-black">Name</th>
+                <th class="bg-[#F0F0F0] text-black">Email</th>
+                <th class="bg-[#F0F0F0] text-black">Date</th>
+                <th class="bg-[#F0F0F0] text-black">Time</th>
+                <th class="bg-[#F0F0F0] text-black">Location</th>
+                <th class="bg-[#F0F0F0] text-black">Choose</th>
               </tr>
             </thead>
             <tbody>
               <!-- row 1 -->
               @foreach($cgs as $cg)
               <tr>
-                <th>
+                <th class="bg-[#FFFFFF]">
                   <label>
-                    <input type="checkbox" class="checkbox" />
+                    <input type="checkbox" class="checkbox border-[#312626] border-2" />
                   </label>
                 </th>
-                <td>
+                <td class="bg-[#FFFFFF] text-[#312626]">
                   <div class="flex items-center space-x-3">
                     <div class="avatar">
                       <div class="mask mask-squircle w-12 h-12">
@@ -151,21 +151,21 @@
                     </div>
                   </div>
                 </td>
-                <td>
+                <td class="bg-[#FFFFFF] text-[#312626]">
                   {{ $cg -> email }}
                   <br/>
-                  <span class="badge badge-ghost badge-sm">
+                  <span class="badge badge-ghost badge-sm border-[#F0F0F0] bg-[#F0F0F0] text-[#312626]">
                       {{ $cg -> id }}
                   </span>
                 </td>
-                <th>
+                <th class="bg-[#FFFFFF] text-[#312626]">
                   {{ $cg -> date }}
                 </th>
-                <th>{{ $cg -> time }}</th>
-                <th>{{ $cg -> location }}</th>
-                <th>
+                <th class="bg-[#FFFFFF] text-[#312626]">{{ $cg -> time }}</th>
+                <th class="bg-[#FFFFFF] text-[#312626]">{{ $cg -> location }}</th>
+                <th class="bg-[#FFFFFF] text-[#312626]">
                   <a href="/discipleship/{{ $cg->id }}">
-                      <button class="btn btn-ghost btn-xs">Select</button>
+                      <button class="btn btn-ghost btn-xs bg-[#F0F0F0]">Select</button>
                   </a>
                 </th>
               </tr>
@@ -173,14 +173,14 @@
             </tbody>
             <!-- foot -->
             <tfoot>
-              <tr>
-                  <th></th>
-                  <th>Name</th>
-                  <th>Phone</th>
-                  <th>Date</th>
-                  <th>Time</th>
-                  <th>Location</th>
-                  <th>Choose</th>
+              <tr >
+                  <th class="bg-[#F0F0F0] text-black"></th>
+                  <th class="bg-[#F0F0F0] text-black">Name</th>
+                  <th class="bg-[#F0F0F0] text-black">Phone</th>
+                  <th class="bg-[#F0F0F0] text-black">Date</th>
+                  <th class="bg-[#F0F0F0] text-black">Time</th>
+                  <th class="bg-[#F0F0F0] text-black">Location</th>
+                  <th class="bg-[#F0F0F0] text-black">Choose</th>
               </tr>
             </tfoot>
             
