@@ -17,7 +17,7 @@ class DashboardController extends Controller
 
     public function aboutus()
     {
-        return view('dashboard.aboutus', [
+        return view('dashboard.aboutUs', [
             'title' => 'About Us'
         ]);
     }
