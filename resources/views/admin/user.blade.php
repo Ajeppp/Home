@@ -87,6 +87,7 @@
                 <a href="/admin/user/{{ $user->id }}/edit">
                     <button class="btn btn-ghost btn-xs">Edit</button>
                 </a>
+                @if ($user->role == 2)
                 <form action="/admin/user/{{ $user->id }}/role" method="post">
                     @csrf
                     @method('patch')
@@ -98,6 +99,7 @@
                         @endif
                     </button>
                 </form>
+                @endif
                 <form action="/admin/user/{{ $user->id }}/delete" method="POST">
                     @csrf
                     @method('delete')

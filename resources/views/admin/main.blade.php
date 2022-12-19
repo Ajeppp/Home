@@ -25,17 +25,17 @@
             </a> 
             <a href="/cg">
                 <div class="border rounded-lg p-1 m-2 text-center bg-stone-100 hover:bg-slate-300">
-                    <button class="button-primary">CG Register</button>
+                    <button class="button-primary">Sahabat Jiwa Register</button>
                 </div>
             </a>
             <a href="/admin/user">
                 <div class="border rounded-lg p-1 m-2 text-center bg-stone-100 hover:bg-slate-300">
-                    <button class="button-primary">Utilize User </button>
+                    <button class="button-primary">Utilize User</button>
                 </div>
             </a>
             <a href="/admin/cg">
                 <div class="border rounded-lg p-1 m-2 text-center bg-stone-100 hover:bg-slate-300">
-                    <button class="button-primary">Utilize CG </button>
+                    <button class="button-primary">Utilize Sahabat Jiwa</button>
                 </div>
             </a>
             <a href="/post">
