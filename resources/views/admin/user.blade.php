@@ -100,11 +100,13 @@
                     </button>
                 </form>
                 @endif
+                @if ($user->role == 2)
                 <form action="/admin/user/{{ $user->id }}/delete" method="POST">
                     @csrf
                     @method('delete')
                     <button class="btn btn-ghost btn-xs" type="submit">Delete</button>
                 </form>
+                @endif
               </th>
             </tr>
             @endforeach
