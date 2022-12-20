@@ -28,24 +28,24 @@
                         <label for="gender" class="text-[#000000]">Gender</label>
                         <div class="flex flex-row gap-10 ">
                             <div>
-                                <input type="radio" name="gender" id="gender" value="male" /> Male
+                                <input type="radio" name="gender" id="gender" value="male" required/> Male
                             </div>
                             <div>
-                                <input type="radio" name="gender" id="gender" value="female" /> Female
+                                <input type="radio" name="gender" id="gender" value="female" required/> Female
                             </div>
                         </div>
                     </div>
                     <div class="flex flex-col mt-2">
-                        <label for="birthdate" class="text-[#000000]">Birth</label>
-                        <input type="date" name="birthdate" id="birthdate" class="border-1  bg-[#D9D9D9] text-[#312626]  rounded-lg w-72 h-10 p-5">
+                        <label for="birthdate" class="text-[#000000]">Birth</label> 
+                        <input type="date" name="birthdate" id="birthdate" class="border-1  bg-[#D9D9D9] text-[#312626]  rounded-lg w-72 h-10 p-5" required>
                     </div>
                     <div class="flex flex-col mt-2">
                         <label for="phone" class="text-[#000000]">Phone</label>
-                        <input placeholder="Phone Number" type="text" name="phone" id="phone" class="border-1  bg-[#D9D9D9] text-[#312626]  rounded-lg w-72 h-10 p-5 " value="{{ old('phone') }}">
+                        <input placeholder="Phone Number" type="text" name="phone" id="phone" class="border-1  bg-[#D9D9D9] text-[#312626]  rounded-lg w-72 h-10 p-5 " value="{{ old('phone') }}" required>
                     </div>
                     <div class="flex flex-col mt-2">
                         <label for="address" class="text-[#000000]">Address</label>
-                        <input placeholder="Address" type="text" name="address" id="address" class="border-1  bg-[#D9D9D9] text-[#312626]  rounded-lg w-72 h-10 p-5" value="{{ old('address') }}">
+                        <input placeholder="Address" type="text" name="address" id="address" class="border-1  bg-[#D9D9D9] text-[#312626]  rounded-lg w-72 h-10 p-5" value="{{ old('address') }}" required>
                     </div>
                     <div class="flex flex-col mt-2">
                         <label for="line" class="text-[#000000]">ID Line</label>
